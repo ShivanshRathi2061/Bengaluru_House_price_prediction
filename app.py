@@ -15,7 +15,7 @@ def get_base64(image_path):
     with open(image_path, "rb") as img:
         return base64.b64encode(img.read()).decode()
 
-image_path = r"C:\Users\hp\Desktop\bengaluru\Bangalore.jpg"
+image_path = "Bangalore.jpg"
 img = get_base64(image_path)
 
 st.markdown(f"""
